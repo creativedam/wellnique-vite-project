@@ -11,6 +11,8 @@
     </p>
 
     <p class="w-full text-center p-4 text-org-950">
+      (+267) 390 3660
+      <br></br>
       Reach us on info@wellnique.co.bw
     </p>
     <Footer />

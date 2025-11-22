@@ -11,7 +11,7 @@
             <!-- Logo -->
             <img
               class="py-4"
-              src="https://wellnique.test/images/well-logo-small.png"
+              src="https://wellnique.co.bw/images/well-logo-small.png"
               alt="logo"
             />
 
@@ -30,7 +30,7 @@
                   >
                     <img
                       class="h-6 pr-2"
-                      src="https://wellnique.test/images/icons/office.png"
+                      src="https://wellnique.co.bw/images/icons/office.png"
                       alt="icon"
                     />
                     <h2 class="col-span-5 text-xl font-bold text-slate-600">
@@ -68,7 +68,7 @@
                   >
                     <img
                       class="h-6 pr-2"
-                      src="https://wellnique.test/images/icons/call.png"
+                      src="https://wellnique.co.bw/images/icons/call.png"
                       alt="icon"
                     />
                     <h2 class="col-span-5 text-xl font-bold text-slate-600">
