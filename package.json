@@ -1,6 +1,6 @@
 {
-  "name": "MPGB",
-  "homepage": "https://creativedam.github.io/mpg-vite-project/",
+  "name": "Wellnique",
+  "homepage": "https://creativedam.github.io/wellnique-vite-project/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-regular-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/vue-fontawesome": "^3.1.2",
     "@tailwindcss/postcss": "^4.1.16",
     "@tailwindcss/vite": "^4.1.14",
     "animate.css": "^4.1.1",

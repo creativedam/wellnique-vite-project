@@ -1,38 +1,30 @@
 <template>
   <div
-    class="w-full bg-white mx-auto grid grid-cols-6 font-lusitana justify-between h-32 sm:h-25 px-4 md:px-10 py-3 border-b border-sky-800 relative z-50 transition-all duration-300"
+    class="w-full bg-white mx-auto grid grid-cols-6 font-sans justify-between h-32 sm:h-25 px-4 md:px-10 py-3 border-b border-org-800 relative z-50 transition-all duration-300"
   >
     <!-- MOBILE BURGER BUTTON -->
     <button
       @click="mobileOpen = !mobileOpen"
-      class="sm:hidden flex items-center h-25 text-sky-800 text-3xl font-bold"
+      class="sm:hidden flex items-center h-25 text-org-800 text-3xl font-bold"
     >
       ☰
     </button>
 
-    <!-- LOGO -->
-    <router-link to="/" class="flex col-span-2 items-center h-full w-50">
-      <div
-        class="h-full w-50 bg-center bg-no-repeat"
-        :style="{ backgroundImage: `url(${logo})` }"
-      ></div>
-    </router-link>
-
     <!-- DESKTOP NAV -->
     <div
-      class="md:container w-full col-span-4 justify-end mx-auto hidden sm:block"
+      class="md:container w-full col-span-6 justify-center mx-auto hidden sm:block"
     >
       <nav
         id="menu-main"
-        class="py-4 w-full flex justify-end h-20 font-lusitana"
+        class="py-4 w-full flex justify-center h-20 font-sans"
       >
         <ul
           id="nav-main"
-          class="flex justify-end h-20 w-5/6 text-black font-medium font-sans"
+          class="flex justify-center h-20 w-5/6 text-black font-medium font-sans"
         >
           <li class="py-4 h-20">
             <router-link
-              class="hover:text-org-100 text-center text-xs hidden lg:text-base px-3 font-light font-lusitana lg:block hover:font-bold"
+              class="hover:text-org-500 text-center text-xs hidden lg:text-base px-3 font-light font-sans lg:block hover:font-bold"
               to="/"
               >HOME</router-link
             >
@@ -44,14 +36,14 @@
             @mouseenter="activeMenu = key"
           >
             <router-link
-              class="text-center hover:text-org-100 text-xs lg:text-base font-lusitana font-light px-2 lg:px-4 block hover:font-bold"
+              class="text-center hover:text-org-500 text-xs lg:text-base font-sans font-light px-2 lg:px-4 block hover:font-bold"
               :to="menu.url"
               >{{ menu.title }}</router-link
             >
           </li>
           <li class="py-4 h-20">
             <router-link
-              class="hover:text-org-100 text-center text-xs lg:text-base font-light font-lusitana px-3 block hover:font-bold"
+              class="hover:text-org-500 text-center text-xs lg:text-base font-light font-sans px-3 block hover:font-bold"
               to="/contacts"
               >CONTACT</router-link
             >
@@ -72,7 +64,7 @@
           class="grid grid-cols-3 h-75 w-full drop-shadow-md z-30 overflow-hidden animate__animated animate__fadeIn"
         >
           <div
-            class="menu-title flex items-center justify-center bg-sky-900/90 text-white"
+            class="menu-title flex items-center justify-center bg-org-300/90 text-white"
           >
             <div class="text-center relative">
               <h1 class="text-4xl drop-shadow-md">{{ menu.title }}</h1>
@@ -124,7 +116,7 @@
       >
         <button
           @click="mobileOpen = false"
-          class="text-2xl rounded-full border border-sky-800 py-2 px-4 hover:text-white text-black bg-white hover:bg-sky-800 font-bold mb-4"
+          class="text-2xl rounded-full border border-org-500 py-2 px-4 hover:text-white text-black bg-white hover:bg-org-800 font-bold mb-4"
         >
           ×
         </button>
@@ -139,7 +131,7 @@
           <li v-for="(menu, key) in menus" :key="key" class="border-b pb-2">
             <button
               @click="toggleMobileDropdown(key)"
-              class="w-full text-sky-900 text-left py-2"
+              class="w-full text-org-400 text-left py-2"
             >
               {{ menu.title }} <span class="px-2">⌄</span>
             </button>
@@ -148,7 +140,7 @@
                 <router-link
                   @click="mobileOpen = false"
                   :to="item.url"
-                  class="block py-1 text-sky-600 text-sm"
+                  class="block py-1 text-org-600 text-sm"
                   >{{ item.label }}</router-link
                 >
               </li>
@@ -181,152 +173,123 @@ const closeMenus = () => {
 };
 const toggleMobileDropdown = (key) =>
   (mobileDropdown.value = mobileDropdown.value === key ? null : key);
-const logo = new URL("@/assets/logo.svg", import.meta.url).href;
+const logo = new URL("@/assets/logo.png", import.meta.url).href;
 
 const menus = {
   about: {
-    title: "ABOUT",
+    title: "ABOUT US",
     url: "/about",
     items: [
       {
-        label: "BACKGROUND",
+        label: "MISSION",
         key: "1",
         description:
-          "Learn about the history, purpose, and guiding principles of the Medical Practitioners Group of Botswana and its role in supporting the national health system.",
-        url: "/about/background",
+          "Our mission is to help employers develop, promote, and sustain positive health and safety cultures for the wellbeing of employees and all interested parties.",
+        url: "/about#mission",
       },
       {
-        label: "FOUNDING MEMBERS",
+        label: "VISION",
         key: "2",
         description:
-          "Discover the individuals who established the Medical Practitioners Group of Botswana and contributed to shaping its vision and direction.",
-        url: "/about/founding-members",
+          "Our vision is to create productive, safe, and healthy workplaces across Botswana and around the world.",
+        url: "/about#vision",
       },
       {
-        label: "EXECUTIVE",
+        label: "VALUES",
         key: "3",
         description:
-          "Meet the current executive team responsible for leadership, policy direction, and the strategic work of the Medical Practitioners Group of Botswana.",
-        url: "/about/executive",
+          "Our core values include professionalism, innovation, trustworthy service, environmental awareness, and social responsibility.",
+        url: "/about#values",
       },
     ],
   },
 
-  partners: {
-    title: "PARTNERS",
-    url: "/partners",
+  services: {
+    title: "SERVICES",
+    url: "/services",
     items: [
       {
-        label: "OUR STRATEGIC PARTNERS",
+        label: "OCCUPATIONAL HEALTH SERVICES",
         key: "1",
         description:
-          "The Medical Practitioners Group of Botswana works closely with key stakeholders across the national health ecosystem including regulatory bodies, healthcare institutions, medical associations, training institutions, and strategic sector partners. These partnerships strengthen clinical standards, promote professional development, and support a unified voice that advances quality healthcare for all people in Botswana.",
-        url: "/partners",
+          "Comprehensive occupational health solutions including employee medical exams, disability management, medical surveillance, and vaccinations.",
+        url: "/service/occupational-health",
       },
-    ],
-  },
-
-  membership: {
-    title: "MEMBERSHIP",
-    url: "/membership",
-    items: [
       {
-        label: "MEMBERSHIP CATEGORIES",
-        key: "1",
+        label: "SAFETY MANAGEMENT SYSTEMS",
+        key: "2",
         description:
-          "Learn about the different membership categories offered by the Medical Practitioners Group of Botswana, including benefits and eligibility for each category.",
-        url: "/membership/categories",
+          "Services supporting effective safety management such as audits and ergonomic assessments.",
+        url: "/service/sms",
       },
       {
-        label: "MEMBER SUPPORT SERVICES",
+        label: "WELLNESS CONSULTANCY",
         key: "3",
         description:
-          "Explore the support services available to members, including career guidance, continuous professional growth resources, and assistance with regulatory matters.",
-        url: "/membership/support",
+          "Wellness solutions including Employee Assistance Programs and counselling services.",
+        url: "/service/wellness",
       },
       {
-        label: "JOIN",
-        key: "2",
+        label: "PANDEMIC RESPONSE",
+        key: "4",
         description:
-          "Begin the process of joining the Medical Practitioners Group of Botswana. Access the application guide and submit your membership request.",
-        url: "/membership/application",
+          "Guidance and implementation support for pandemic readiness, response, and workplace continuity.",
+        url: "/service/pandemic-response",
       },
     ],
   },
 
-  practice: {
-    title: "PRACTICE",
-    url: "/practice",
+  connect: {
+    title: "CONNECT",
+    url: "/connect",
     items: [
       {
-        label: "CLINIC MAP",
+        label: "WEBINAR",
         key: "1",
         description:
-          "Explore an interactive map that shows the locations of all clinics and medical facilities represented by the Medical Practitioners Group of Botswana.",
-        url: "/practice/map",
+          "Join Wellnique webinars covering safety, health, and wellness topics.",
+        url: "/connect/webinar",
       },
       {
-        label: "MEMBER DIRECTORY",
+        label: "PODCASTS",
         key: "2",
         description:
-          "Browse a complete directory of registered members including professional details, areas of practice, and contact information where available.",
-        url: "/practice/directory",
+          "Listen to Wellnique podcasts featuring insights from experts and practitioners.",
+        url: "/connect/podcasts",
       },
       {
-        label: "CLINICAL PRACTICE RESOURCES",
+        label: "SAFETY SHOP",
         key: "3",
         description:
-          "Access helpful resources for practitioners including guidelines, advisory notes, professional tools, and information that supports day to day clinical practice.",
-        url: "/practice/resources",
+          "Explore Wellnique’s Safety Shop for equipment, tools, and professional safety essentials.",
+        url: "/connect/safety-shop",
       },
     ],
   },
 
-  shop: {
-    title: "SHOP",
-    url: "/shop",
+  join: {
+    title: "JOIN",
+    url: "/get",
     items: [
       {
-        label: "SHOP",
+        label: "COMPANY",
         key: "1",
-        description:
-          "Explore products and services available to members and the public within the Medical Practitioners Group of Botswana community.",
-        url: "/shop",
+        description: "Request a company-level engagement or service package.",
+        url: "/get",
       },
       {
-        label: "ADVERTISEMENTS",
+        label: "PARTNERSHIP",
         key: "2",
         description:
-          "View advertisements shared by members, partners, and approved organisations including medical equipment, professional services, and other relevant listings.",
-        url: "/shop/advertisements",
-      },
-    ],
-  },
-
-  newsEvents: {
-    title: "NEWS",
-    url: "/news-events",
-    items: [
-      {
-        label: "LATEST NEWS",
-        key: "1",
-        description:
-          "Stay informed with the latest announcements, public statements, and important updates from the Medical Practitioners Group of Botswana.",
-        url: "/news-events/news",
+          "Partner with Wellnique on health, safety, or wellness programs.",
+        url: "/contact#partnership",
       },
       {
-        label: "EVENTS",
-        key: "2",
-        description:
-          "View planned events including conferences, workshops, member meetings, and national health engagement sessions.",
-        url: "/news-events/events",
-      },
-      {
-        label: "MEDIA CENTRE",
+        label: "PRACTITIONER",
         key: "3",
         description:
-          "Access press releases, interviews, official publications, and multimedia content that highlights the work of the Medical Practitioners Group of Botswana.",
-        url: "/news-events/media",
+          "Join Wellnique as a practitioner and become part of a network of health and safety professionals.",
+        url: "/contact#practitioner",
       },
     ],
   },

@@ -1,5 +1,5 @@
 <template>
-  <div id="get" class="font-lusitana bg-repeat bg-sky-300 py-10 w-full">
+  <div id="get" class="font-sans bg-repeat bg-org-200 py-10 w-full">
     <div class="container mx-auto px-4">
       <div class="w-full relative py-4">
         <!-- Title -->
@@ -17,7 +17,7 @@
 const props = defineProps({
   title: {
     type: String,
-    default: "MEDICAL PRACTITIONERS GROUP OF BOTSWANA",
+    default: "Wellnique",
   },
 });
 </script>
