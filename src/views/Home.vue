@@ -1,20 +1,15 @@
 <template>
   <div class="home w-full">
-    <Top />
-    <Header/>
+    <!-- <Top /> -->
+    <Header />
     <Nav />
-    <h1 class="text-org-800 text-4xl py-5 text-center font-bold">Home</h1>
-    <h2 class="w-full font-bold bg-white text-4xl text-center p-4 text-red-500">
-      Our website is under maintanace
-    </h2>
-    <p class="w-full text-center p-4 text-black">
-      We promote positive health and safety cultures
-    </p>
-    <p class="w-full text-center p-4 text-org-950">
-      (+267) 390 3660
-      <br></br>
-      Reach us on info@wellnique.co.bw
-    </p>
+    <CovidList />
+    <SlideShow />
+    <Intro />
+    <AboutComponent />
+    <Poster />
+    <Scope />
+    <MailingList />
     <Footer />
   </div>
 </template>
@@ -22,8 +17,17 @@
 <script>
 import Top from "@/components/Shared/Top.vue";
 import Nav from "../components/Nav/Nav.vue";
-import Footer from "../components/Shared/Footer.vue";
 import Header from "../components/Shared/Header.vue";
+import SlideShow from "../components/Shared/SlideShow.vue";
+import Footer from "../components/Shared/Footer.vue";
+import CovidList from "../components/Shared/CovidList.vue";
+import Intro from "../components/Shared/Intro.vue";
+import AboutComponent from "../components/Shared/AboutComponent.vue";
+import Poster from "../components/Shared/Poster.vue";
+import Scope from "../components/Shared/Scope.vue";
+import MailingList from "../components/Shared/MailingList.vue";
+
+
 
 export default {
   name: "Home",
@@ -31,6 +35,13 @@ export default {
     Top,
     Nav,
     Header,
+    CovidList,
+    SlideShow,
+    AboutComponent,
+
+    MailingList,
+    Poster,
+    Scope,
     Footer,
   },
 };

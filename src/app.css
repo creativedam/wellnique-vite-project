@@ -1,6 +1,9 @@
 /* 3) Tailwind (must stay HERE) */
 @import "tailwindcss";
 
+/* 2) External CSS imports */
+@import "animate.css";
+
 @theme {
   /* Breakpoints */
   --breakpoint-xs: 360px;
@@ -15,13 +18,17 @@
   --font-serif: "Oswald", sans-serif;
 
   /* Background images */
-  --background-image-Info-Image: url("/src/assets/images/info.png");
+  --background-image-Info-image: url("/src/assets/images/info.png");
+  --background-image-logo2-image:  url("/src/assets/images/well-logo-medium-white.png");
+  --background-image-logo-image:  url("/src/assets/images/well-logo-medium.png");
   --background-image-pattern-image: url("/src/assets/images/pattern.svg");
+  --background-image-pattern2-image: url("/src/assets/images/pattern2.svg");
+  --background-image-pattern3-image: url("/src/assets/images/pattern3.svg");
   --background-image-mug-Image: url("/src/assets/images/mug.jpg");
   --background-image-well-image: url("/src/assets/images/well.png");
-  --background-image-stone-icon: url("/src/assets/images/icons/stone.png");
-  --background-image-saturn-icon: url("/src/assets/images/icons/saturn.png");
-  --background-image-binoculars-icon: url("/src/assets/images/icons/binoculars.png");
+  --background-image-stone-icon: url("/src/assets/images/icons/diamond.png");
+  --background-image-saturn-icon: url("/src/assets/images/icons/finish.png");
+  --background-image-binoculars-icon: url("/src/assets/images/icons/telescope.png");
   --background-image-medical-icon: url("/src/assets/images/icons/medical.png");
   --background-image-about-icon: url("/src/assets/images/icons/about.png");
   --background-image-contact-icon: url("/src/assets/images/icons/contact.png");
@@ -44,6 +51,8 @@
   --background-image-sub1-image: url("/src/assets/images/1a.jpg");
   --background-image-sub2-image: url("/src/assets/images/2a.jpg");
   --background-image-sub3-image: url("/src/assets/images/3a.jpg");
+  --background-image-sub4-image: url("/src/assets/images/4a.jpg");
+  --background-image-sub5-image: url("/src/assets/images/5a.jpg");
   --background-image-side-image: url("/src/assets/images/side.png");
 
   /* Background positions */
@@ -62,6 +71,7 @@
   --height-0\.5: 2px;
   --height-76: 280px;
   --height-92: 320px;
+  --height-94: 350px;
   --height-98: 669px;
 
   /* Widths */
