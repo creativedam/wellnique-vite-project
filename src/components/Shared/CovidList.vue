@@ -1,68 +1,50 @@
 <template>
-  <section class="w-full bg-org-50/50 py-4">
+  <section class="bg-org-50/50 w-full border-t-2 border-amber-500 py-2">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 gap-3 rounded-xl bg-transparent sm:grid-cols-2 lg:grid-cols-6">
         <!-- Title -->
-        <div
-          class="flex items-center justify-center gap-3  bg-white px-4 py-3 text-org-600 sm:col-span-2 lg:col-span-1">
-          <icon name="virus" class="h-7 w-7 fill-org-500 sm:h-9 sm:w-9 animate__animated" />
-          <h1 class="text-base font-semibold sm:text-lg animate__animated">
-            Covid Statistics
-          </h1>
+        <div class="text-org-600 flex items-center justify-center gap-3 px-4 py-3 sm:col-span-2 lg:col-span-1">
+          <icon name="virus" class="fill-org-400 animate__animated h-7 w-7 sm:h-9 sm:w-9" />
+          <h1 class="animate__animated text-base sm:text-lg">Covid Statistics</h1>
         </div>
 
         <!-- Country -->
-        <div
-          class="flex min-h-16 flex-col items-center justify-center   bg-white px-4 py-3 text-center animate__animated">
-          <span class="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Country
-          </span>
-          <span class="mt-1 text-sm font-semibold text-slate-700 sm:text-base">
+        <div class="animate__animated flex min-h-16 flex-col items-center justify-center px-4 py-3 text-center">
+          <span class="text-xs font-medium tracking-wide text-slate-500 uppercase">Country</span>
+          <span class="mt-1 text-sm text-slate-700">
             {{ covidData.country || "—" }}
           </span>
         </div>
 
         <!-- Cases -->
-        <div
-          class="flex min-h-16 flex-col items-center justify-center   bg-white px-4 py-3 text-center animate__animated">
-          <span class="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Cases
-          </span>
-          <span class="mt-1 text-sm font-semibold text-slate-700 sm:text-base">
-            {{ covidData.cases || "Loading..." }}
+        <div class="animate__animated flex min-h-16 flex-col items-center justify-center px-4 py-3 text-center">
+          <span class="text-xs font-medium tracking-wide text-slate-500 uppercase">Cases</span>
+          <span class="mt-1 text-sm text-slate-700">
+            {{ covidData.cases || "..." }}
           </span>
         </div>
 
         <!-- Recovered -->
-        <div
-          class="flex min-h-16 flex-col items-center justify-center   bg-white px-4 py-3 text-center animate__animated">
-          <span class="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Recovered
-          </span>
-          <span class="mt-1 text-sm font-semibold text-slate-700 sm:text-base">
-            {{ covidData.recovered || "Loading..." }}
+        <div class="animate__animated flex min-h-16 flex-col items-center justify-center px-4 py-3 text-center">
+          <span class="text-xs font-medium tracking-wide text-slate-500 uppercase">Recovered</span>
+          <span class="mt-1 text-sm text-slate-700">
+            {{ covidData.recovered || "..." }}
           </span>
         </div>
 
         <!-- Population -->
-        <div
-          class="flex min-h-16 flex-col items-center justify-center   bg-white px-4 py-3 text-center animate__animated">
-          <span class="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Population
-          </span>
-          <span class="mt-1 text-sm font-semibold text-slate-700 sm:text-base">
-            {{ covidData.population || "Loading..." }}
+        <div class="animate__animated flex min-h-16 flex-col items-center justify-center px-4 py-3 text-center">
+          <span class="text-xs font-medium tracking-wide text-slate-500 uppercase">Population</span>
+          <span class="mt-1 text-sm text-slate-700">
+            {{ covidData.population || "..." }}
           </span>
         </div>
 
         <!-- Tests -->
-        <div
-          class="flex min-h-16 flex-col items-center justify-center   bg-white px-4 py-3 text-center animate__animated">
-          <span class="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Tests
-          </span>
-          <span class="mt-1 text-sm font-semibold text-slate-700 sm:text-base">
-            {{ covidData.tests || "Loading..." }}
+        <div class="animate__animated flex min-h-16 flex-col items-center justify-center px-4 py-3 text-center">
+          <span class="text-xs font-medium tracking-wide text-slate-500 uppercase">Tests</span>
+          <span class="mt-1 text-sm text-slate-700">
+            {{ covidData.tests || "..." }}
           </span>
         </div>
       </div>

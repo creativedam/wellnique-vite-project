@@ -20,11 +20,12 @@
   /* Background images */
   --background-image-Info-image: url("/src/assets/images/info.png");
   --background-image-logo2-image:  url("/src/assets/images/well-logo-medium-white.png");
+  --background-image-logo-small:  url("/src/assets/images/well-logo-small-black.png");
   --background-image-logo-image:  url("/src/assets/images/well-logo-medium.png");
   --background-image-pattern-image: url("/src/assets/images/pattern.svg");
   --background-image-pattern2-image: url("/src/assets/images/pattern2.svg");
   --background-image-pattern3-image: url("/src/assets/images/pattern3.svg");
-  --background-image-mug-Image: url("/src/assets/images/mug.jpg");
+  --background-image-mug-Image: url("/src/assets/images/mug.png");
   --background-image-well-image: url("/src/assets/images/well.png");
   --background-image-stone-icon: url("/src/assets/images/icons/diamond.png");
   --background-image-saturn-icon: url("/src/assets/images/icons/finish.png");
@@ -37,8 +38,8 @@
 
   --background-image-business-image: url("/src/assets/images/business-md.png");
   --background-image-saver-image-1: url("/src/assets/images/screensaver/1.jpg");
-  --background-image-saver-image-2: url("/src/assets/images/screensaver/2.jpg");
-  --background-image-saver-image-3: url("/src/assets/images/screensaver/3.jpg");
+  --background-image-saver-image-2: url("/src/assets/images/screensaver/2.png");
+  --background-image-saver-image-3: url("/src/assets/images/screensaver/3.png");
   --background-image-saver-image-4: url("/src/assets/images/screensaver/4.jpg");
 
   --background-image-service1-image: url("/src/assets/images/services/service1.png");
@@ -55,13 +56,20 @@
   --background-image-sub5-image: url("/src/assets/images/5a.jpg");
   --background-image-side-image: url("/src/assets/images/side.png");
 
+  /* Background  */
+  --background-image-wallpaper-white: url("/src/assets/images/wall-md-white.png");
+  --background-image-wallpaper-black: url("/src/assets/images/wall-md-black.png");
+  --background-image-wallpaper-primary: url("/src/assets/images/wall-md-primary.png");
+
   /* Background positions */
   --background-position-bottom-4: left 15% bottom;
   --background-position-left-center: left 50% bottom;
   --background-position-center-top: center top;
 
   /* Background sizes */
-  --background-size-50: 40px;
+  --background-size-50: 10px;
+
+
 
   /* Font sizes */
   --text-base: 17px;
@@ -85,20 +93,20 @@
   --color-org-200: #ffc38a;
   --color-org-300: #ff9a3e;
   --color-org-400: #fe7c14;
-  --color-org-500: #fd8103; /* your base */
+  --color-org-500: #b98a20; /* your base */
   --color-org-600: #d96a02;
   --color-org-700: #ad5302;
   --color-org-800: #7f3a01;
   --color-org-900: #522400;
 
-  --color-purp-50: #f4ecf9;
-  --color-purp-100: #e4d3f1;
-  --color-purp-200: #c7a8e0;
-  --color-purp-300: #a47bc8;
-  --color-purp-400: #744d9d;
-  --color-purp-500: #270c3b;
-  --color-purp-600: #1e0930;
-  --color-purp-700: #180726;
-  --color-purp-800: #12051d;
-  --color-purp-900: #0c0313;
+  --color-grape-50: #f4ecf9;
+  --color-grape-100: #e4d3f1;
+  --color-grape-200: #c7a8e0;
+  --color-grape-300: #a47bc8;
+  --color-grape-400: #744d9d;
+  --color-grape-500: #270c3b;
+  --color-grape-600: #1e0930;
+  --color-grape-700: #180726;
+  --color-grape-800: #12051d;
+  --color-grape-900: #0c0313;
 }

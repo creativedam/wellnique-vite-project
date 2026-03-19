@@ -2,32 +2,29 @@
   <section class="relative overflow-hidden">
     <div id="hero-carousel" class="slider">
       <div v-for="(slide, index) in slides" :key="index" class="carousel-slide">
-        <div :class="[
-          'bg-center bg-cover bg-no-repeat',
-          slide.bgClass
-        ]">
+        <div :class="['bg-cover bg-center bg-no-repeat', slide.bgClass]">
           <div class="bg-white/5">
-            <div class="mx-auto flex min-h-[480px] max-w-7xl items-center px-4 py-16 sm:px-6 md:min-h-[560px] lg:px-8">
+            <div class="mx-auto flex min-h-[720px] max-w-7xl items-center px-4 py-16 sm:px-6 md:min-h-[840px] lg:px-8">
               <div class="w-full max-w-3xl">
                 <div class="text-left">
                   <h1
-                    class="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-md sm:text-4xl md:text-5xl lg:text-6xl animate__animated animate__fadeInDown">
+                    class="animate__animated animate__fadeInDown mb-4 text-3xl leading-tight font-bold text-white drop-shadow-md sm:text-4xl md:text-5xl lg:text-6xl">
                     {{ slide.title }}
                   </h1>
 
                   <p
-                    class="mb-8 max-w-2xl text-base leading-7 text-white/95 drop-shadow-md sm:text-lg md:text-xl animate__animated animate__fadeInUp">
+                    class="animate__animated animate__fadeInUp mb-8 max-w-2xl text-base leading-7 text-white/95 drop-shadow-md sm:text-lg md:text-xl">
                     {{ slide.description }}
                   </p>
 
                   <div class="flex flex-wrap items-center gap-4">
                     <a :href="slide.primaryLink || slide.link"
-                      class="inline-flex items-center bg-purp-400 border border-gray-500 px-6 py-3 text-base font-semibold text-white transition duration-300 hover:bg-org-500">
+                      class="bg-grape-400 hover:bg-org-500 inline-flex items-center border border-gray-500 px-6 py-3 text-base font-semibold text-white transition duration-300">
                       {{ slide.primaryText || "Our Mandate" }}
                     </a>
 
                     <a :href="slide.secondaryLink || slide.link"
-                      class="inline-flex items-center bg-white px-6 border border-purp-e00 py-3 text-base font-semibold text-slate-700 transition duration-300 hover:bg-slate-100">
+                      class="border-grape-e00 inline-flex items-center border bg-white px-6 py-3 text-base font-semibold text-slate-700 transition duration-300 hover:bg-slate-100">
                       {{ slide.secondaryText || "Learn More" }}
                     </a>
                   </div>
@@ -57,7 +54,7 @@ export default {
           title: "Healthy & Productive Employees",
           description: "We provide sustainable solutions for healthier workplaces.",
           link: "/about",
-          bgClass: "bg-saver-image-4",
+          bgClass: "bg-saver-image-2",
           primaryText: "Our Mandate",
           secondaryText: "Learn More",
         },
@@ -65,7 +62,7 @@ export default {
           title: "Healthy and Safe Workplaces",
           description: "We promote positive health and safety cultures.",
           link: "/about",
-          bgClass: "bg-saver-image-1",
+          bgClass: "bg-saver-image-2",
           primaryText: "Our Mandate",
           secondaryText: "Learn More",
         },

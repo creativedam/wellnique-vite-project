@@ -1,5 +1,5 @@
 <template>
-    <header class="relative bg-white text-white">
+    <header class="relative border-b-2 border-b-amber-500 bg-white text-white">
         <div class="absolute inset-0"></div>
 
         <div class="relative z-10">
@@ -7,12 +7,12 @@
                 <div class="flex items-center justify-between gap-4">
                     <!-- Logo -->
                     <div class="flex-grow">
-                        <div class="bg-logo-image bg-center bg-contain bg-no-repeat h-20 w-50"></div>
+                        <div class="bg-logo-image h-20 w-50 bg-contain bg-center bg-no-repeat"></div>
                     </div>
-                    <div class="flex flex-row items-center justify-center lg:items-end gap-4">
+                    <div class="flex flex-row items-center justify-center gap-4 lg:items-end">
                         <a href="mailto:info@wellnique.co.bw?subject=Register as Counsellor&body=Please type below your names and contact details."
                             target="_blank"
-                            class="inline-flex items-center hvr-bounce-to-right px-6 py-2   text-sm sm:text-base  border border-purp-300 bg-purp-400 text-white shadow-sm transition duration-300 hover:bg-org-300 hover:text-white">
+                            class="hvr-bounce-to-right border-grape-400 bg-grape-400 hover:bg-grape-100 hover:text-grape-400 inline-flex items-center border-2 px-6 py-2 text-sm text-white shadow-sm transition duration-300 sm:text-base">
                             <span class="mr-2 text-lg">+</span>
                             Register as Counsellor
                         </a>

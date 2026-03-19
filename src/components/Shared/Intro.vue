@@ -1,14 +1,14 @@
 <template>
-    <section class="w-full bg-repeat bg-purp-400/75 py-4">
+    <section class="bg-grape-400/75 w-full bg-repeat py-4">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 gap-4 items-center text-center sm:grid-cols-2 sm:text-left">
-                <div class="text-white  text-base font-medium sm:text-lg">
-                    <span class=" px-4 py-2 rounded-full">Are you a counsellor ? Register here today </span>
+            <div class="grid grid-cols-1 items-center gap-4 text-center sm:grid-cols-2 sm:text-left">
+                <div class="text-base font-medium text-white sm:text-lg">
+                    <span class="rounded-full px-4 py-2">Are you a counsellor ? Register here today</span>
                 </div>
                 <div class="flex justify-center sm:justify-end">
                     <a href="mailto:info@wellnique.co.bw?subject=Register as Counsellor&body=Please type below your names and contact details."
                         target="_blank"
-                        class="inline-flex items-center hvr-bounce-to-right px-6 py-3 font-semibold  rounded-4xl text-sm sm:text-base  border border-gray-800 bg-white text-gray-700 shadow-sm transition duration-300 hover:bg-org-300 hover:text-white">
+                        class="hvr-bounce-to-right hover:bg-org-300 inline-flex items-center rounded-4xl border border-gray-800 bg-white px-6 py-3 text-sm font-semibold text-gray-700 shadow-sm transition duration-300 hover:text-white sm:text-base">
                         <span class="mr-2 text-lg">+</span>
                         Register as Counsellor
                     </a>

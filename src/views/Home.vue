@@ -7,8 +7,13 @@
     <SlideShow />
     <Intro />
     <AboutComponent />
-    <Poster />
-    <Scope />
+    <div class="w-full bg-mug-Image bg-cover bg-center bg-fixed pt-20 pb-0 text-white lg:pt-24 lg:pb-0">
+      <!-- Image / Brand block -->
+
+      <Poster />
+      <Scope />
+    </div>
+
     <MailingList />
     <Footer />
   </div>
